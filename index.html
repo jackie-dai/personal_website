@@ -1,74 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- <base href="./public/" target="_blank"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackie Dai</title>
     <meta name="description" content="My very own personal website">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css"
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
-    <nav>
-        <p>Hey, I'm</p>
-        <h1>Jackie Dai</h1>
-        <p>A computer science major at UC Berkeley.</p>
-        </nav>
 
-    <div id="about-me">
-        <h2>About Me</h2>
-    </div>
-
-    <ul>
-        <li><p id="age"></p></li>
-        <li><p>I like to play badminton</p></li> 
-        <li><p>I have an obsession with late night drives</p></li>
-    </ul>
-
-    <h3>Random animal generator</h3>
-    <form id="QnA-container" display="flex">
-        <div>
-            <label>Favorite animal?</label>
-            <select id="animal-dropdown" type="dropdown">
-                <option selected disabled">...</option>
-                <option value="dog">doggo</option>
-                <option value="cat">cats</option>
-            </select>
-        </div>
-
-        <div id="img-container">
-
-        </div>
-
+    <div id="container">
 
         <div>
-            <input class="btn" id="animal-submit" value="Submit" onclick="displayAnimal()"">
+            <nav>
+                <div id="bio-container">
+                    <div id="profile-container" class="image-cropper">
+                        <img id="profile-img" src="./images/profile.jpg" width="200px" height="200px">      
+                    </div>
+                    <div id="intro-text">
+                        <p>Hey, I'm</p>
+                        <h1>Jackie Dai</h1>
+                        <p>A computer science major at UC Berkeley.</p>
+                    </div>      
+                </div>
+
+                <div id="links">
+                    <ul>
+                        <li><a href="#projects-container" target="_blank">Projects</a></li>
+                        <li><a href="https://github.com/jackie-dai" target="_blank">Github</a</li>
+                        <li><a href="https://www.linkedin.com/in/jackie-dai/" target="_blank">Linkedin</a></li>
+                        <li><a href="https://anotheruseless.website/httpwafflecat-com/" target="_blank">Resume</a></li>
+                    </ul>
+                </div>
+            </nav>
+
         </div>
-    </form>
+
+        <div class="line"></div>
     
+        <div id="about-me">
+            <h2>About Me</h2>
+            <ul>
+                <li><p id="age">I am 19.491023 years old</p></li>
+                <li><p>I like to play badminton</p></li> 
+                <li><p>I have an obsession with late night drives</p></li>
+            </ul>
+        </div>
+    
+        <div id="projects-container">
+            <h2>Projects</h2>
 
-    <div id="games-container">
-        <h3>Play some of my games!</h3>
-        <ul>
-            <div>
-                <img src="./images/GETMEOUT.png" height="150px"; width="200px";>
-                <a href="https://jackiedai.itch.io/get-me-out" target="_blank">Get Me Out</a>
+            <div id="project1" class="project">
+                <div class="project-img-container"></div>
+                <img class="project-img" src="./images/catdog.jpg">
+                <div class="project-text-container">
+                    <h3 class="project-header">Lorem Ipsum</h3>
+                    <p classs="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum quam vitae eius beatae perspiciatis aspernatur ex alias voluptatum distinctio eaque reiciendis totam, ad quidem dicta eos? Possimus, iste accusamus!</p>
+                </div>
             </div>
 
+            <div id="project1" class="project">
+                <div class="project-img-container"></div>
+                <img class="project-img" src="./images/catdog.jpg">
+                <div class="project-text-container">
+                    <h3 class="project-header">Lorem Ipsum</h3>
+                    <p classs="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum quam vitae eius beatae perspiciatis aspernatur ex alias voluptatum distinctio eaque reiciendis totam, ad quidem dicta eos? Possimus, iste accusamus!</p>
+                </div>
+            </div>
+
+            <div id="project1" class="project">
+                <div class="project-img-container"></div>
+                <img class="project-img" src="./images/catdog.jpg">
+                <div class="project-text-container">
+                    <h3 class="project-header">Lorem Ipsum</h3>
+                    <p classs="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum quam vitae eius beatae perspiciatis aspernatur ex alias voluptatum distinctio eaque reiciendis totam, ad quidem dicta eos? Possimus, iste accusamus!</p>
+                </div>
+            </div>
+
+        </div>
+
+        <h3>Random animal generator</h3>
+        <form id="QnA-container" display="flex">
             <div>
-                <img src="./images/FirstContact.png" height="150px"; width="200px";>
-                <a href="https://jackiedai.itch.io/first-contact" target="_blank">First Contact</a>
-             </div>
+                <label>Favorite animal?</label>
+                <select id="animal-dropdown" type="dropdown">
+                    <option selected disabled">...</option>
+                    <option value="dog">doggo</option>
+                    <option value="cat">cats</option>
+                </select>
+            </div>
 
-             <div>
-                <img src="./images/CS-at-Berkeley.png" height="150px" width="200px">
-                <a href="https://youtu.be/hvL1339luv0?feature=shared" target="_blank">CS @ Berkeley: The Game</a>
-             </div>
+            <div id="img-container">
 
-        </ul>
+            </div>
+
+
+            <div>
+                <input class="btn" id="animal-submit" value="Submit" onclick="displayAnimal()"">
+            </div>
+        </form>
+        
+
+        <div id="games-container">
+            <h3>Play some of my games!</h3>
+            <ul>
+                <div>
+                    <img src="./images/GETMEOUT.png" height="150px"; width="200px";>
+                    <a href="https://jackiedai.itch.io/get-me-out" target="_blank">Get Me Out</a>
+                </div>
+
+                <div>
+                    <img src="./images/FirstContact.png" height="150px"; width="200px";>
+                    <a href="https://jackiedai.itch.io/first-contact" target="_blank">First Contact</a>
+                </div>
+
+                <div>
+                    <img src="./images/CS-at-Berkeley.png" height="150px" width="200px">
+                    <a href="https://youtu.be/hvL1339luv0?feature=shared" target="_blank">CS @ Berkeley: The Game</a>
+                </div>
+
+            </ul>
+        </div>
+
+
+        <a href="./projects.html">Projects</a>
+
     </div>
+    
 
-    <a href="./projects.html">Projects</a>
-
-    <script src="./js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
