@@ -30,7 +30,6 @@
                         <li><a href="#projects-container" target="_blank">Projects</a></li>
                         <li><a href="https://github.com/jackie-dai" target="_blank">Github</a</li>
                         <li><a href="https://www.linkedin.com/in/jackie-dai/" target="_blank">Linkedin</a></li>
-                        <li><a href="https://anotheruseless.website/httpwafflecat-com/" target="_blank">Resume</a></li>
                     </ul>
                 </div>
             </nav>
@@ -51,32 +50,43 @@
         <div id="projects-container">
             <h2>Projects</h2>
 
-            <div id="project1" class="project">
+            <div id="project4" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src="./images/catdog.jpg">
+                <img class="project-img" src="./images/gdd-logo.png">
                 <div class="project-text-container">
-                    <h3 class="project-header">Lorem Ipsum</h3>
-                    <p classs="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum quam vitae eius beatae perspiciatis aspernatur ex alias voluptatum distinctio eaque reiciendis totam, ad quidem dicta eos? Possimus, iste accusamus!</p>
+                    <a style="text-decoration: none; color: black;" href="https://www.gamedesigndecal.com/" target="_blank"><h3 class="project-header">Game Design Course Website</h3></a>
+                    <p classs="project-description">A course website that is currently being used for the Game Design + Development class at UC Berkeley. Features weekly announcements with weekly updating schedule. Includes 17 lab specs & 3 project specs</p>
                 </div>
             </div>
 
             <div id="project1" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src="./images/catdog.jpg">
+                <img class="project-img" src="./images/wordnet.png">
                 <div class="project-text-container">
-                    <h3 class="project-header">Lorem Ipsum</h3>
-                    <p classs="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum quam vitae eius beatae perspiciatis aspernatur ex alias voluptatum distinctio eaque reiciendis totam, ad quidem dicta eos? Possimus, iste accusamus!</p>
+                    <h3 class="project-header">Wordnet</h3>
+                    <p classs="project-description">A dataset of synsets. Used graph traverasals such as BFS, to collect and return all hyponyms of the given word. Additional functionalities include frequency of usage given a word and time period. </p>
                 </div>
             </div>
 
-            <div id="project1" class="project">
+            <div id="project2" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src="./images/catdog.jpg">
+                <img class="project-img" src="./images/github.png">
                 <div class="project-text-container">
-                    <h3 class="project-header">Lorem Ipsum</h3>
-                    <p classs="project-description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate laborum quam vitae eius beatae perspiciatis aspernatur ex alias voluptatum distinctio eaque reiciendis totam, ad quidem dicta eos? Possimus, iste accusamus!</p>
+                    <h3 class="project-header">Mini Github</h3>
+                    <p classs="project-description">A version control system for code. My implementation supports committing, branching, merging, and viewing commit history. Similar to the popular version control system, Gitub.</p>
                 </div>
             </div>
+
+            <div id="project3" class="project">
+                <div class="project-img-container"></div>
+                <img class="project-img" src="./images/CPU.avif">
+                <div class="project-text-container">
+                    <h3 class="project-header">Logism CPU</h3>
+                    <p classs="project-description">Using popular logical circuit software, Logism, I constructed a virtual CPU. My CPU supports all 7 essential instruction types with a custom ALU. Additionally, instruction are pipelined maximizing efficiency.</p>
+                </div>
+            </div>
+
+
 
         </div>
 
@@ -87,7 +97,7 @@
                 <select id="animal-dropdown" type="dropdown">
                     <option selected disabled">...</option>
                     <option value="dog">doggo</option>
-                    <option value="cat">cats</option>
+                    <option value="cat">cat</option>
                 </select>
             </div>
 
@@ -101,6 +111,7 @@
             </div>
         </form>
         
+  
 
         <div id="games-container">
             <h3>Play some of my games!</h3>
@@ -122,13 +133,10 @@
 
             </ul>
         </div>
-
-
-        <a href="./projects.html">Projects</a>
-
     </div>
     
 
     <script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

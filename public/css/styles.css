@@ -92,7 +92,7 @@ nav div {
 }
 
 .btn:hover {
-
+    cursor: pointer;
     background-color: yellow;
 }
 
