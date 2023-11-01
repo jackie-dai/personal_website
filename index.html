@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jackie Dai</title>
     <meta name="description" content="My very own personal website">
-    <link rel="stylesheet" type="text/css" href="\css\styles.css">
+    <link rel="stylesheet" type="text/css" href="./public/css/styles.css">
 </head>
 <body>
 
@@ -16,7 +16,7 @@
             <nav>
                 <div id="bio-container">
                     <div id="profile-container" class="image-cropper">
-                        <img id="profile-img" src="\images\profile.jpg" width="200px" height="200px">      
+                        <img id="profile-img" src="./public/images/profile.jpg" width="200px" height="200px">      
                     </div>
                     <div id="intro-text">
                         <p>Hey, I'm</p>
@@ -28,7 +28,7 @@
                 <div id="links">
                     <ul>
                         <li><a href="#projects-container" target="_blank">Projects</a></li>
-                        <li><a href="https://github.com/jackie-dai" target="_blank">Github</a</li>
+                        <li><a href="https://github.com/jackie-dai" target="_blank">Github</a></li>
                         <li><a href="https://www.linkedin.com/in/jackie-dai/" target="_blank">Linkedin</a></li>
                     </ul>
                 </div>
@@ -43,7 +43,7 @@
             <ul>
                 <li><p id="age">I am 19.491023 years old</p></li>
                 <li><p>I like to play badminton</p></li> 
-                <li><p>I have an obsession with late night drives</p></li>
+                <li><p>I enjoy stargazing</p></li>
             </ul>
         </div>
     
@@ -52,7 +52,7 @@
 
             <div id="project4" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src="images/gdd-logo.png">
+                <img class="project-img" src="./public/images/gdd-logo.png">
                 <div class="project-text-container">
                     <a style="text-decoration: none; color: black;" href="https://www.gamedesigndecal.com/" target="_blank"><h3 class="project-header">Game Design Course Website</h3></a>
                     <p classs="project-description">A course website that is currently being used for the Game Design + Development class at UC Berkeley. Features weekly announcements with weekly updating schedule. Includes 17 lab specs & 3 project specs</p>
@@ -61,7 +61,7 @@
 
             <div id="project1" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src=".\images\wordnet.png">
+                <img class="project-img" src="./public/images/wordnet.png">
                 <div class="project-text-container">
                     <h3 class="project-header">Wordnet</h3>
                     <p classs="project-description">A dataset of synsets. Used graph traverasals such as BFS, to collect and return all hyponyms of the given word. Additional functionalities include frequency of usage given a word and time period. </p>
@@ -70,7 +70,7 @@
 
             <div id="project2" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src="\images\github.png">
+                <img class="project-img" src="./public/images/github.png">
                 <div class="project-text-container">
                     <h3 class="project-header">Mini Github</h3>
                     <p classs="project-description">A version control system for code. My implementation supports committing, branching, merging, and viewing commit history. Similar to the popular version control system, Gitub.</p>
@@ -79,7 +79,7 @@
 
             <div id="project3" class="project">
                 <div class="project-img-container"></div>
-                <img class="project-img" src="/images/CPU.avif">
+                <img class="project-img" src="./public/images/CPU.avif">
                 <div class="project-text-container">
                     <h3 class="project-header">Logism CPU</h3>
                     <p classs="project-description">Using popular logical circuit software, Logism, I constructed a virtual CPU. My CPU supports all 7 essential instruction types with a custom ALU. Additionally, instruction are pipelined maximizing efficiency.</p>
@@ -90,12 +90,12 @@
 
         </div>
 
-        <h3>Random animal generator</h3>
+        <h2>Random animal generator</h2>
         <form id="QnA-container" display="flex">
             <div>
                 <label>Favorite animal?</label>
                 <select id="animal-dropdown" type="dropdown">
-                    <option selected disabled">...</option>
+                    <option selected disabled>...</option>
                     <option value="dog">doggo</option>
                     <option value="cat">cat</option>
                 </select>
@@ -107,27 +107,27 @@
 
 
             <div>
-                <input class="btn" id="animal-submit" value="Submit" onclick="displayAnimal()"">
+                <input class="btn" id="animal-submit" value="Submit" onclick="displayAnimal()">
             </div>
         </form>
         
   
 
         <div id="games-container">
-            <h3>Play some of my games!</h3>
+            <h2>Play some of my games!</h2>
             <ul>
                 <div>
-                    <img src="/images/GETMEOUT.png" height="150px"; width="200px";>
+                    <img src="./public/images/GETMEOUT.png" style=" height: 150px; width:200px;">
                     <a href="https://jackiedai.itch.io/get-me-out" target="_blank">Get Me Out</a>
                 </div>
 
                 <div>
-                    <img src="/images/FirstContact.png" height="150px"; width="200px";>
+                    <img src="./public/images/FirstContact.png" style=" height: 150px; width:200px;">
                     <a href="https://jackiedai.itch.io/first-contact" target="_blank">First Contact</a>
                 </div>
 
                 <div>
-                    <img src="/images/CS-at-Berkeley.png" height="150px" width="200px">
+                    <img src="./public/images/CS-at-Berkeley.png" style=" height: 150px; width:200px;">
                     <a href="https://youtu.be/hvL1339luv0?feature=shared" target="_blank">CS @ Berkeley: The Game</a>
                 </div>
 
@@ -136,7 +136,7 @@
     </div>
     
 
-    <script src="/js/script.js"></script>
+    <script src="./public/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </body>
 </html>

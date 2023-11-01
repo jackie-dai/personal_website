@@ -7,17 +7,15 @@ body {
     margin: auto;
 }
 
-#container div {
-    margin-bottom: 10px;
-    margin-top: 10px;
-}
-
 
 nav {
     display: flex;
     justify-content: space-between;
 }
 
+#container > div {
+    margin-bottom: 20px;
+}
 
 #bio-container {
     display: flex;
@@ -109,7 +107,9 @@ nav div {
     margin-right: 100px;
 }
 
-
+.project {
+    margin-bottom: 20px;
+}
 
 
 
