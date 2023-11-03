@@ -33,7 +33,7 @@ nav div {
     display: inline;
     margin: 0 auto; 
     height: 100%;
-    width: auto;
+    width: 150px;
 }
 
 .image-cropper {
